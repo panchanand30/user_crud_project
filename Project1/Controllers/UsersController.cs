@@ -91,6 +91,7 @@ namespace Project1.Controllers
 
             if (row_userphone.Any())
             {
+                //backend validation for duplicate Ph. 
                 ModelState.AddModelError("CustomErrorPhone", "Phone Number already in use with another account");
                 flag_exists = true;
 
